@@ -14,8 +14,6 @@ The Accident CCTV Detection System is a real-time solution designed to automatic
   - **OpenAI GPT-4**: Used for natural language processing tasks to enhance the system's decision-making capabilities, including understanding accident reports and providing insights based on the detected incidents.
 
 
-Here’s a more polished version of your `README.md`:
-
 
 # How to Use
 
@@ -51,3 +49,12 @@ http://<your-server-ip>:5002/process_video
 
 Replace `<your-server-ip>` with the actual server IP.
 ```
+
+
+# Collaborators (ACS Team)
+
+- **Kevin Siburian** - [kevinsiburian099@gmail.com](mailto:kevinsiburian099@gmail.com)
+- **Souksawat Thanouphet** - [thanouphetsouksavath04@gmail.com](mailto:thanouphetsouksavath04@gmail.com)
+- **Thanyapisit Buaprakhong** - [thanyapisit.bua@gmail.com](mailto:thanyapisit.bua@gmail.com)
+- **Nanthawat Sukkam** - [jamesukkam@gmail.com](mailto:jamesukkam@gmail.com)
+- **Muhammad Galvin Fata** - [fatagalvin@gmail.com](mailto:fatagalvin@gmail.com)
