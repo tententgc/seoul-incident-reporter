@@ -49,6 +49,10 @@ http://<your-server-ip>:5002/process_video
 
 Replace `<your-server-ip>` with the actual server IP.
 
+### 7. Update Telegram API
+
+In `telegram_bot.py`, update the Telegram API with your credentials. Alternatively, you can join the Telegram group [here](https://web.telegram.org/k/#-4524627260) to view the results without making any changes.
+
 
 
 # Collaborators (ACS Team)
