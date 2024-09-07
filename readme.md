@@ -53,6 +53,15 @@ Replace `<your-server-ip>` with the actual server IP.
 
 In `telegram_bot.py`, update the Telegram API with your credentials. Alternatively, you can join the Telegram group [here](https://web.telegram.org/k/#-4524627260) to view the results without making any changes.
 
+### 8. Running the Frontend
+
+Navigate to the `hackathonseoul` folder, then run the following commands to install dependencies and start the program:
+
+```bash
+npm install
+npm run dev
+```
+
 
 
 
