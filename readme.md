@@ -54,9 +54,12 @@ Replace `<your-server-ip>` with the actual server IP.
 In `telegram_bot.py`, update the Telegram API with your credentials. Alternatively, you can join the Telegram group [here](https://web.telegram.org/k/#-4524627260) to view the results without making any changes.
 
 
+
+
 # Workflow of Application
 
-![Workflow] (readme_img/techstack.png)
+![Workflow](readme_img/techstack.png)
+
 
 
 
