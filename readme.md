@@ -34,14 +34,21 @@ Download the model weights from [this link](https://drive.google.com/file/d/125S
 ```bash
 pip install -r requirements.txt
 ```
+### 5. Add .env with the template
+```
+OPENAI_API_KEY=
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
 
-### 5. Start the API Server
+```
+
+### 6. Start the API Server
 Run the API on port `5002`:
 ```bash
 python api.py
 ```
 
-### 6. Process Video via API
+### 7. Process Video via API
 To upload a video for processing, send a request to:
 ```
 http://<your-server-ip>:5002/process_video
@@ -49,9 +56,10 @@ http://<your-server-ip>:5002/process_video
 
 Replace `<your-server-ip>` with the actual server IP.
 
-### 7. Update Telegram API
+### 8. Update Telegram API
 
 In `telegram_bot.py`, update the Telegram API with your credentials. Alternatively, you can join the Telegram group [here](https://web.telegram.org/k/#-4524627260) to view the results without making any changes.
+
 
 ### 8. Running the Frontend
 
