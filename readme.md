@@ -48,7 +48,7 @@ http://<your-server-ip>:5002/process_video
 ```
 
 Replace `<your-server-ip>` with the actual server IP.
-```
+
 
 
 # Collaborators (ACS Team)
