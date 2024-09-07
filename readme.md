@@ -16,7 +16,7 @@ The Accident CCTV Detection System is a real-time solution designed to automatic
 
 Here’s a more polished version of your `README.md`:
 
-```markdown
+
 # How to Use
 
 ### 1. Create a Virtual Environment
