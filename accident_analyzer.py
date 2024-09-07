@@ -22,7 +22,26 @@ class AccidentAnalyzer:
                 {
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "Please explain the case of the accident in this image. in 1.Situation 2. analyzer what happened and show another information involve about situation"},
+                        {"type": "text", "text": '''
+                         Response should be in the following format and take short each topic but having a key important
+                         **1.Incident Overview :** 
+                            - A brief description of the accident and what seems to have happened.
+                        **2.Location of the Accident:** 
+                            - Describe the place where the accident occurred (street, intersection, highway, building, etc.).
+                            -Include details like traffic conditions, weather, lighting, or any hazards present.
+                        **3.Vehicles/Objects Involved :** 
+                            -identify the vehicles, objects, or structures involved in the accident (e.g., cars, trucks, motorcycles, bicycles, etc.).
+                            -Mention any visible damage to the vehicles or objects.
+                        **4.People Involved:** 
+                            -Number of people involved, including drivers, passengers, and pedestrians.
+                            -Visible injuries, expressions, and the actions they are taking (e.g., helping each other, calling for help, etc.).  
+                        **5.Damage Assessment:** 
+                            - Extent of damage to vehicles, property, or infrastructure.
+                            - Any potential secondary hazards (e.g., fuel leakage, debris, fire risk).
+                        **6. summary Case:**  
+                            - show and analysis what happended in the image
+                            
+                         '''},
                         {
                             "type": "image_url",
                             "image_url": {

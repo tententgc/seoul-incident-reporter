@@ -24,10 +24,6 @@ def StartApplication(input_vid_path, output_vid_path, weight_path="weights/best.
     out = cv2.VideoWriter(output_vid_path, fourcc, fps, (width, height))
 
     analyzer = AccidentAnalyzer()
-    class_colors = {
-        "Accident": (0, 0, 255), 
-        "Non Accident": (255, 255, 255)
-    }
 
     while True:
         ret, frame = video_path.read()
@@ -38,7 +34,7 @@ def StartApplication(input_vid_path, output_vid_path, weight_path="weights/best.
         results = model.predict(source=frame, show=False, save=False, save_txt=False)
         id = results[0].probs.top1
         clsName = results[0].names[id]
-        if (results[0].probs.top1conf.cpu() >= 0.7) and (clsName == "Accident"):
+        if (results[0].probs.top1conf.cpu() >= 0.7) and (clsName != "Non Accident"):
             image_filename = f"{image_save_folder}/accident_img.jpg"
             if output_frame_count == 0:
                 cv2.imwrite(image_filename, frame)
@@ -47,7 +43,7 @@ def StartApplication(input_vid_path, output_vid_path, weight_path="weights/best.
                 output_frame_count += 1 
                 
             
-            color = class_colors.get(clsName, (255, 255, 255))
+            color = (0,0,255)
             font_scale = width / 600  
             font_thickness = max(1, int(font_scale))  
             font = cv2.FONT_HERSHEY_COMPLEX
@@ -58,6 +54,7 @@ def StartApplication(input_vid_path, output_vid_path, weight_path="weights/best.
             
         
         frame_count += 1 
+        # Frame addjust when we use in real life because The same place got notification a lot it not impossible
         if frame_count >= 2000:
             output_frame_count = 0
         out.write(frame)
