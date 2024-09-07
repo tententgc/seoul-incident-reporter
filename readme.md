@@ -56,7 +56,7 @@ In `telegram_bot.py`, update the Telegram API with your credentials. Alternative
 
 # Workflow of Application
 
-![Workflow](readme_img/Screenshot 2567-09-08 at 01.43.13.png)
+![Workflow] (readme_img/techstack.png)
 
 
 
