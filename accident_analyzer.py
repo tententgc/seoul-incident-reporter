@@ -58,14 +58,7 @@ class AccidentAnalyzer:
         message_content = response.choices[0].message.content
         server_push_notifications(message_content)
         
-        # speech_file_path = "speech_report.mp3"
-        # sound_response= self.client.audio.speech.create(
-        # model="tts-1",
-        # voice="alloy",
-        # input=f"{message_content}"
-        # )
 
-        # sound_response.stream_to_file(speech_file_path)
         message_call()
         return message_content
 
